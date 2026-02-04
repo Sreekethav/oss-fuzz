@@ -23,12 +23,12 @@ ARG http_proxy
 ARG https_proxy
 ARG no_proxy
 
-ENV HTTP_PROXY=${HTTP_PROXY}
-ENV HTTPS_PROXY=${HTTPS_PROXY}
-ENV NO_PROXY=${NO_PROXY}
-ENV http_proxy=${http_proxy}
-ENV https_proxy=${https_proxy}
-ENV no_proxy=${no_proxy}
+ENV HTTP_PROXY=$HTTP_PROXY
+ENV HTTPS_PROXY=$HTTPS_PROXY
+ENV NO_PROXY=$NO_PROXY
+ENV http_proxy=$http_proxy
+ENV https_proxy=$https_proxy
+ENV no_proxy=$no_proxy
 
 RUN git clone --depth 1 https://github.com/curl/curl.git /src/curl
 RUN git clone --depth 1 https://github.com/curl/curl-fuzzer.git /src/curl_fuzzer
